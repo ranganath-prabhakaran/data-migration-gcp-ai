@@ -1,0 +1,26 @@
+gcp_project_id: "your-gcp-project-id"
+gcp_region: "us-central1"
+gcp_zone: "us-central1-a"
+
+agent_host_vm_name: "agent-host-vm"
+mcp_bridge_vm_name: "mcp-bridge-vm"
+target_sql_instance_name: "migrated-mysql-instance"
+gcs_bucket_name_prefix: "mysql-migration-bucket"
+
+llm_config:
+  model: "gemini-1.5-flash-latest"
+  # The API key will be fetched from Secret Manager, not stored here.
+  api_key_secret_name: "gemini-api-key"
+
+secrets:
+  source_db_user: "source-db-user"
+  source_db_password: "source-db-password"
+  source_db_host: "source-db-host"
+  source_db_name: "source-db-name"
+  target_db_user: "root"
+  target_db_password: "target-db-password"
+  gemini_api_key: "gemini-api-key"
+
+migration_strategies:
+  gcs_import_threshold_gb: 100
+  dms_threshold_gb: 500

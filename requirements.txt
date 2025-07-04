@@ -1,0 +1,10 @@
+autogen-agentchat==0.6.1
+google-cloud-secret-manager==2.19.0
+google-cloud-storage==2.16.0
+PyMySQL==1.1.0
+mcp==1.0.6
+pyyaml==6.0.1
+google-api-python-client==2.128.0
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.0
+pytest==8.2.0
