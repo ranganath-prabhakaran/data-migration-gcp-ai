@@ -9,3 +9,4 @@ zone = "asia-south1-a"
 # Format must be "xxx.xxx.xxx.xxx/32"
 
 admin_ssh_ip_range = "0.0.0.0/0" # WARNING: This is insecure. Replace with your specific IP.
+
