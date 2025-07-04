@@ -4,15 +4,16 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
-env/
-venv/
+#env/
+#givenv/
 pip-selfcheck.json
+
 
 # Terraform
 .terraform/
 *.tfstate
 *.tfstate.backup
-*.tfvars
+#*.tfvars
 *.tfplan
 .terraform.lock.hcl
 

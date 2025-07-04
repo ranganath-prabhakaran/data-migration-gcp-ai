@@ -6,13 +6,13 @@ variable "project_id" {
 variable "region" {
   description = "The GCP region for deployment."
   type        = string
-  default     = "us-central1"
+  default     = "asia-south1"
 }
 
 variable "zone" {
   description = "The GCP zone for deployment."
   type        = string
-  default     = "us-central1-a"
+  default     = "asia-south1-a"
 }
 
 variable "agent_host_vm_name" {
