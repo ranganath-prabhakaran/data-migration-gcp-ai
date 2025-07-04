@@ -14,6 +14,9 @@ resource "google_sql_database_instance" "target_instance" {
   }
 
   deletion_protection = false
+  depends_on = [
+    google_service_networking_connection.private_vpc_connection
+  ]
 }
 
 resource "random_password" "target_db_password" {
